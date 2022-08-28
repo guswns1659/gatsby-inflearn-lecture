@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+    "jsx": "preserve",                                /* Specify what JSX code is generated. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "noUnusedLocals": true,                           /* Enable error reporting when local variables aren't read. */
+    "noUnusedParameters": true,                       /* Raise an error when a function parameter isn't read. */
+    "noImplicitReturns": true,                        /* Enable error reporting for codepaths that do not explicitly return in a function. */
+    "baseUrl": "./src",                                  /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+    	"components/*": ["./components/*"],
+      	"utils/*": ["./utils/*"],
+      	"hooks/*": ["./hooks/*"]
+	},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "resolveJsonModule": true,                        /* Enable importing .json files. */
+  },
+  "include": ["src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
