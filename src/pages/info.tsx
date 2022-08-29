@@ -1,5 +1,22 @@
 import React, {FunctionComponent} from "react";
 import {graphql} from "gatsby";
+import {css, Global} from "@emotion/react";
+
+const globalStyle = css`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-size: 20px;
+  }
+`
+
+const textStyle = css`
+  font-size: 18px;
+  font-weight: 700;
+  color: gray;
+`
 
 type InfoPageProps = {
     data: {
@@ -18,7 +35,8 @@ const InfoPage: FunctionComponent<InfoPageProps> = function ({data}) {
 
     return (
         <div>
-            {siteMetadata.title}
+            <Global styles={globalStyle} />
+            <div css={textStyle}>{siteMetadata.title}</div>
             {siteMetadata.description}
             {siteMetadata.author}
         </div>
