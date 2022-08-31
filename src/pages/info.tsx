@@ -33,6 +33,7 @@ type InfoPageProps = {
 const InfoPage: FunctionComponent<InfoPageProps> = function ({data}) {
     const siteMetadata = data.site.siteMetadata;
 
+    // @ts-ignore
     return (
         <div>
             <Global styles={globalStyle} />
